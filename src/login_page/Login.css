@@ -1,0 +1,54 @@
+/* declare variables for colors */
+:root{
+    --main-background-color: #FFFFFF;
+    --main-contrast-color: #2d333a;
+    --main-contrast-color-alternate-first: #3B4013;
+    --main-contrast-color-alternate-second: #7a6e9e;
+}
+
+.page-wrapper{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-background-color);
+}
+
+.login-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-contrast-color);
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+.login-form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+  
+input[type='email'],input[type='password'] {
+    padding: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+  
+button[type='submit'] {
+    padding: 1rem;
+    background-color: var(--main-contrast-color-alternate-second);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+.login-footer{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+  
